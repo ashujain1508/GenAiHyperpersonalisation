@@ -1,105 +1,103 @@
-.transaction {
+.transaction-section {
+  padding: 24px;
+  margin-top: 20px;
+}
+
+.transaction-paper {
+  padding: 24px;
+  background-color: #ffffff;
+}
+
+.header-container {
   display: flex;
-  justify-content: center;
-  padding: 1rem;
-  padding-left: 18rem;
-  margin-top: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
 }
 
-.transaction__container {
-  max-width: 1000px;
-  width: 90%;
-  padding: 2rem !important;
-  background-color: #ffffff !important;
+.section-title {
+  color: #00395D;
+  font-weight: 600;
 }
 
-.transaction__title {
-  color: #00395D !important;
-  margin-bottom: 1.5rem !important;
+.filters {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.status-filter {
+  min-width: 150px;
+}
+
+.status-select {
+  height: 40px;
+}
+
+.transaction-table {
+  min-width: 650px;
+}
+
+.table-header {
   font-weight: 600 !important;
+  color: #666 !important;
+  border-bottom: none !important;
+  padding: 16px 8px !important;
 }
 
-/* Table styles */
-.MuiTableHead-root .MuiTableCell-root {
-  font-weight: 600 !important;
-  color: #00395D !important;
-  background-color: #f5f5f5 !important;
+.table-cell {
+  border-bottom: none !important;
+  padding: 16px 8px !important;
 }
 
-.MuiTableBody-root .MuiTableRow-root:hover {
-  background-color: #f8f9fa !important;
-}
-
-.positive-amount {
-  color: #2e7d32 !important; /* Green color for positive amounts */
-  font-weight: 500 !important;
-}
-
-.negative-amount {
-  color: #d32f2f !important; /* Red color for negative amounts */
-  font-weight: 500 !important;
-}
-
-/* Responsive styles */
-@media (min-width: 1600px) {
-  .transaction {
-    padding-left: 22rem;
+.table-row {
+  &:hover {
+    background-color: #f5f5f5;
   }
 }
 
-@media (min-width: 1440px) and (max-width: 1599px) {
-  .transaction {
-    padding-left: 20rem;
-  }
+.status {
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 0.875rem;
+  font-weight: 500;
 }
 
-@media (max-width: 1439px) {
-  .transaction {
-    padding-left: 18rem;
-  }
+.status.sent {
+  background-color: #ffebee;
+  color: #d32f2f;
 }
 
-@media (max-width: 1200px) {
-  .transaction {
-    padding-left: 14rem;
-  }
+.status.received {
+  background-color: #e8f5e9;
+  color: #2e7d32;
 }
 
-@media (max-width: 992px) {
-  .transaction {
-    padding-left: 10rem;
+@media (max-width: 900px) {
+  .transaction-section {
+    padding: 16px;
   }
-  
-  .transaction__container {
-    padding: 1.5rem !important;
-  }
-}
 
-@media (max-width: 768px) {
-  .transaction {
-    padding: 1rem;
-    padding-left: 6rem;
+  .transaction-paper {
+    padding: 16px;
   }
-  
-  .transaction__container {
-    padding: 1rem !important;
-  }
-  
-  .MuiTable-root {
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
-  }
-}
 
-@media (max-width: 576px) {
-  .transaction {
-    padding-left: 3rem;
+  .header-container {
+    flex-direction: column;
+    gap: 16px;
   }
-}
 
-@media (max-width: 480px) {
-  .transaction {
-    padding-left: 1.5rem;
+  .filters {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .status-filter,
+  .status-select {
+    width: 100% !important;
+  }
+
+  .transaction-table {
+    min-width: 600px;
   }
 } 
