@@ -1,0 +1,36 @@
+{
+  "transactions": [
+    {
+      "id": "TRX001",
+      "date": "2024-03-15",
+      "description": "Tesco Store",
+      "category": "Groceries",
+      "amount": -45.67,
+      "type": "Debit Card"
+    },
+    {
+      "id": "TRX002",
+      "date": "2024-03-14",
+      "description": "Salary Credit",
+      "category": "Income",
+      "amount": 2800.00,
+      "type": "Bank Transfer"
+    },
+    {
+      "id": "TRX003",
+      "date": "2024-03-13",
+      "description": "Amazon UK",
+      "category": "Shopping",
+      "amount": -89.99,
+      "type": "Credit Card"
+    },
+    {
+      "id": "TRX004",
+      "date": "2024-03-12",
+      "description": "Costa Coffee",
+      "category": "Food & Drinks",
+      "amount": -4.75,
+      "type": "Debit Card"
+    }
+  ]
+} 
